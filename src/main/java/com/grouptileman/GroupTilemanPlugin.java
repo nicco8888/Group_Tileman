@@ -14,7 +14,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Group Tileman"
 )
 public class GroupTilemanPlugin extends Plugin
 {

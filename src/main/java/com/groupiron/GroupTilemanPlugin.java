@@ -14,7 +14,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Group Tileman"
 )
 public class GroupTilemanPlugin extends Plugin
 {
@@ -27,13 +27,13 @@ public class GroupTilemanPlugin extends Plugin
 	@Override
 	protected void startUp() throws Exception
 	{
-		log.info("Example started!");
+		log.info("Group Tileman started!");
 	}
 
 	@Override
 	protected void shutDown() throws Exception
 	{
-		log.info("Example stopped!");
+		log.info("Group Tileman stopped!");
 	}
 
 	@Subscribe
@@ -41,7 +41,7 @@ public class GroupTilemanPlugin extends Plugin
 	{
 		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
 		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.greeting(), null);
+			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Group Tileman says " + config.greeting(), null);
 		}
 	}
 
